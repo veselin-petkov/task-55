@@ -8,11 +8,38 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .sidebar{
+        width: 280px;
+        height: 100%;
+        background-color: blue;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .main{
+        background-color: rebeccapurple;
+        width: 100%;
+      }
+
+    </style>
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
+      <div class="container">
+        <aside class="sidebar">
+          <div> <br></div>
+        </aside>
+        <main class="main">
+        </main>
+
+
+      </div>
   </body>
 </html>
